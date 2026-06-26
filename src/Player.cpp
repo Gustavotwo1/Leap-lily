@@ -84,6 +84,9 @@ void Player::setPosition(float px, float py) {
 void Player::setVelY(float v) {
     velY = v;
 }
+bool Player::isOlhandoEsquerda() {
+    return olhandoEsquerda;
+}
 
 
 bool Player::isOnGround() { return noChao; }

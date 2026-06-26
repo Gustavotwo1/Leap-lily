@@ -91,9 +91,12 @@ void drawPlayer(Player& player, GLuint parado, GLuint dir, GLuint esq, GLuint ca
 {
     GLuint tex;
 
-    if (player.getVelY() > 0)
-        tex = dir;
-    else if (player.getVelY() < 0)
+    if (player.getVelY() > 0){
+        if (player.isOlhandoEsquerda())
+            tex = esq;
+        else
+            tex = dir;
+    }else if (player.getVelY() < 0)
         tex = caindo;
     else
         tex = parado;

@@ -26,6 +26,7 @@ class Player {
     bool isOnGround();
     void setPosition(float x, float y);
     void setVelY(float v);
+    bool isOlhandoEsquerda();
 
     float getX();
     float getY();
